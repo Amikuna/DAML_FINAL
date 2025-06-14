@@ -31,7 +31,7 @@ def initialize_model():
         }
 
         # Fetch data for USA
-        df = wbdata.get_dataframe(indicators, country='USA', date=(start_date, end_date))
+        df = wbdata.get_dataframe(indicators, country='USA', data_date=(start_date, end_date))
         
         # Sort and reset index
         df = df.sort_index().reset_index()
